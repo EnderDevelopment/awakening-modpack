@@ -1,0 +1,7 @@
+[[mods]]
+modId="awakeningmod"
+displayName="The Awakening Mod"
+version="${file.jarVersion}"
+description='''
+A mod that adds new content and features to Minecraft.
+'''

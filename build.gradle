@@ -1,0 +1,29 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '5.1.+'
+}
+
+group = 'com.enderdevelopment'
+version = '1.0'
+archivesBaseName = 'awakeningmod'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://files.minecraftforge.net/maven'
+    }
+}
+
+ext.minecraft {
+    version = '1.19.2'
+    mappings = 'official'
+    runDir = 'run'
+}
+
+ext.minecraft.runs {
+    client {
+        main = 'com.enderdevelopment.awakeningmod.AwakeningMod'
+    }
+    server {
+        main = 'com.enderdevelopment.awakeningmod.AwakeningMod'
+    }
+}
